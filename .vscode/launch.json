@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PySpark Submit",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/test.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PYSPARK_PYTHON": "/home/a/venvs/pyspark310/bin/python",
+                "PYSPARK_DRIVER_PYTHON": "/home/a/venvs/pyspark310/bin/python",
+                "PYSPARK_SUBMIT_ARGS": "--packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1 pyspark-shell",
+                "JAVA_HOME": "/usr/lib/jvm/java-17-openjdk-amd64"
+            }
+        }
+    ]
+}
