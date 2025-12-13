@@ -23,7 +23,7 @@ topic_name = 'rogalev_building_sensors'
 sensorID=str(uuid.uuid4())
 print(f"Sensor ID: {sensorID} topic_name: {topic_name}")
 
-for i in range(30):
+for i in range(300):
     # Відправлення повідомлення в топік
     try:
         data = {
